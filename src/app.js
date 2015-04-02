@@ -39,8 +39,8 @@ var GameLayer = cc.Layer.extend({
 //            cc.view.setIMEKeyboardState(true);
 //
 //
-//        this.scheduleUpdate();
-
+        this.scheduleUpdate();
+//
 
         // 骨骼动画测试
         this.test();
@@ -104,19 +104,19 @@ var GameLayer = cc.Layer.extend({
 
     actionJoypadStart:function(degrees){
         this.mHero.runWithDegrees(degrees);
-        this.mRobot.runWithDegrees(degrees);
+//        this.mRobot.runWithDegrees(degrees);
     },
     actionJoypadUpdate:function(degrees){
         this.mHero.moveWithDegrees(degrees);
-        this.mRobot.moveWithDegrees(degrees);
+//        this.mRobot.moveWithDegrees(degrees);
     },
     actionJoypadEnded:function(degrees){
         this.mHero.idle();
-        this.mRobot.idle();
+//        this.mRobot.idle();
     },
     attackButtonClick:function(button){
         this.mHero.attack(button);
-        this.mRobot.attack(button);
+//        this.mRobot.attack(button);
     },
     onKeyDown:function(e){
         // 保存所有的按键信息
