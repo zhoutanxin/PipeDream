@@ -35,10 +35,17 @@ var GameLayer = cc.Layer.extend({
         characters.addChild(this.mRobot);
         this.addChild(characters);
 
-        // 骨骼动画测试
-//        this.test();
+//        if (cc.sys["capabilities"].hasOwnProperty('keyboard'))
+//            cc.view.setIMEKeyboardState(true);
 //
-//        bRef = true;
+//
+//        this.scheduleUpdate();
+
+
+        // 骨骼动画测试
+        this.test();
+
+        bRef = true;
         // add a "close" icon to exit the progress. it's an autorelease object
 //        var closeItem = new cc.MenuItemImage(
 //            res.CloseNormal_png,
