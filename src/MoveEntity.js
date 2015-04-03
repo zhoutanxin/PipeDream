@@ -14,7 +14,16 @@ var MoveEntity = BaseEnity.extend({
     //实体产生的提供自己最大的力 double
     m_dMaxForde:null,
     //交通工具的最大速率(弧度每秒) double
-    m_dMaxTurnRate:null
+    m_dMaxTurnRate:null,
+    getMaxSpeed:function(){
+        return m_dMaxSpeed;
+    },
+    getPos:function(){
+        return super._position;
+    },
+    velocity:function(){
+        return m_vVelocity;
+    }
 });
 
 
